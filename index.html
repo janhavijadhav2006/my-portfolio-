@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';">
+  <title>Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Janhavi Mahesh Jadhav</h1>
+    <nav>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="toggle-theme">Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card" onclick="toggleDetails(this)">
+        <h3>Firewall Log Analyzer</h3>
+        <p class="short">A Python tool to analyze firewall logs for anomalies.</p>
+        <p class="details hidden">This tool parses log entries, detects IP-based threats, and exports reports to CSV. Hosted on GitHub with documentation.</p>
+      </div>
+      <div class="card" onclick="toggleDetails(this)">
+        <h3>Phishing Detector</h3>
+        <p class="short">ML model to identify phishing URLs with 92% accuracy.</p>
+        <p class="details hidden">Built using Python and Scikit-learn, trained on URL features like length, prefix/suffix usage, and domain age.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skill-bars">
+        <li><label>Network Security</label><span class="bar" style="width: 90%"></span></li>
+        <li><label>Python</label><span class="bar" style="width: 85%"></span></li>
+        <li><label>Penetration Testing</label><span class="bar" style="width: 80%"></span></li>
+      </ul>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>CompTIA Security+</li>
+        <li>Certified Ethical Hacker (CEH)</li>
+        <li>Google Cybersecurity Certificate</li>
+      </ul>
+    </section>
+
+    <section id="blog">
+      <h2>Blog</h2>
+      <article>
+        <h3>How I Prevented an XSS Attack</h3>
+        <p>Real-world case on detecting and mitigating XSS vulnerabilities using Content Security Policy and input validation techniques.</p>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Janhavi Mahesh Jadhav</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
